@@ -1,0 +1,48 @@
+:root{
+    --dark: #adadee;
+    --white: #edf2fb;
+    --open: "Open Sans", sans-serif;
+}
+
+*{
+    font-size: 10px;
+}
+
+body{
+    background: var(--dark);
+    margin: 0;
+    font-family: var(--open);
+}
+
+header{
+    width: 100%;
+}
+
+h1{
+    color: var(--white);
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+    margin: 0;
+    padding-top: 10px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+h1{
+    color: var(--white);
+    font-size: 3.0rem;
+    letter-spacing: 5px;
+    margin: 0;
+    padding-top: 10px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 660px){
+    h1{
+        font-size: 5rem; 
+    }
+
+}
