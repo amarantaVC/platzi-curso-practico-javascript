@@ -45,6 +45,15 @@ function areaTriangulo( base, altura) {
     return (base * altura)/2;
 }
 
+function alturaTriangulo(lado1,lado2,base){
+    if (lado1 == lado2 && lado1 != base ){
+        const unCuarto = ((base)**2)/ 4 ;
+        const altura = Math.sqrt(lado1 - unCuarto);
+        return altura;
+    } else{
+        alert("Error los lados 1 y 2 no son iguales");
+    }
+}
 // console.log("El area del triangulo es:" + areaTriangulo + "cm al cuadrado");
 
 console.groupEnd();
@@ -121,6 +130,18 @@ function calcularAreaTriangulo(){
     const value2 = Number(altura.value);
     const area = areaTriangulo(value1, value2);
     alert(area);
+}
+
+function calcularAlturaIsosceles(){
+    const lado1 = document.getElementById("InputLado1");
+    const lado2 = document.getElementById("InputLado2");
+    const base = document.getElementById("InputBase");
+    const value1 = Number(lado1.value);
+    const value2 = Number(lado2.value);
+    const value3 = Number(base.value);
+
+    const altura = alturaTriangulo(value1, value2, value3);
+    alert(altura);
 }
 //-------------CIRCULO---------------//
 
