@@ -10,19 +10,7 @@ const list= [
 ]
 
 list.sort((a,b)=> a-b)
-function calcularMediaAritmetica(list){ 
  
-  
-  const  sumaLista1= list.reduce(
-     function (valorAcumulado = 0 , nuevoElemento){
-         return valorAcumulado + nuevoElemento 
-     } 
-  )
-  
-  const promedioLista1= sumaLista1/list.length 
-  return promedioLista1
-  }
-
 
 const mitadLista= parseInt(list.length/2)
 
