@@ -9,8 +9,8 @@ function calcularMediaArmonica(lista){
     
     let sumaLista = 0;
 
-    for (let index = 0; index < lista.length; index++) {
-        sumaLista += (1/lista[index])
+    for (let i = 0; i < lista.length; i++) {
+        sumaLista += (1/lista[i]);
       }
 
     const armonicaLista = lista.length / sumaLista
